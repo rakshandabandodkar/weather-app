@@ -53,6 +53,7 @@ const weatherapp = () => {
     snow: snowy,
     haze: cloudy,
     mist: cloudy,
+    drizzle:rainy,
   }
   const weatherImage = data.weather ? weatherImages[data.weather[0].main.toLowerCase()] : null
   const backgroundimages = {
@@ -62,6 +63,7 @@ const weatherapp = () => {
     Snow: 'linear-gradient(to right, #a4f7ff, #fff)',
     Haze: 'linear-gradient(to right, #57d6d4, #71eeec)',
     Mist: 'linear-gradient(to right, #57d6d4, #71eeec)',
+    drizzle: 'linear-gradient(to right, #5bc8fb, #80eaff)',
 
   }
   const backgroundImage = data.weather ? backgroundimages[data.weather[0].main] : 'linear-gradient(to right, #f3b07c, #fcd283)'
